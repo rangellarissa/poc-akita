@@ -33,7 +33,7 @@ export class ApiService {
         return this.http.delete(`${this.baseUrl}/${id}`);
     }
 
-    updateToDo(id: string, changes: ToDo) {
+    updateToDo(id: string, changes: any) {
         return this.http.put(`${this.baseUrl}/${id}`, changes);
     }
 

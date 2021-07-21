@@ -3,13 +3,13 @@ import { Store, StoreConfig } from "@datorama/akita";
 import { ToDo } from "../todo.model";
 
 export interface ToDoState{
-    todos: ToDo[];
-    isLoaded: boolean;
+    toDos: ToDo[],
+    isLoaded: boolean,
 }
 
 export const getInitialState = () => {
     return {
-        todos:[],
+        toDos: [],
         isLoaded: false,
     };
 };

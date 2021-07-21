@@ -1,6 +1,11 @@
 export interface ToDo {
-    _id?: string;
+    _id?: any;
     title?: string;
     description?: string;
-    status?: string;
+    status?: ToDoStatus;
+}
+
+export enum ToDoStatus {
+    OPEN = 'open',
+    DONE = 'done'
 }
